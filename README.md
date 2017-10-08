@@ -12,8 +12,12 @@ The purpose of this project is to take a brand new AWS account and run a series 
 ##### How to run this project #####
 - Configure your AWS credentials with a key set that has the rights to manage IAM resources. Since I am using this project to configure a fresh aws account I used the root accounts keys. After the first run I created and used IAM user keys.
 - Make sure Terraform is installed
-- Set your account alias in terraform.tfvars
-- Set your IAM prefix in terraform.tfvars (this will be the prefix for your admin, poweruser and readonly users)
+- Set your variable values in terraform.tfvars
+  - account alias
+  - IAM prefix (this will be the prefix for your admin, poweruser and readonly users)
+  - remote state prefix (used in setting up the Dynamo Db table and keys)
+  - remote state s3 bucket name
+  - cloud trail s3 bucket name
 - Run terraform init to make sure your providers are downloaded.
     ```
     $ terraform init
