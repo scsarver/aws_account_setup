@@ -6,6 +6,8 @@ The purpose of this project is to take a brand new account and run a series of u
 - Use groups to assign permissions
 - Apply an IAM password policy
 - ~~Delete your root access keys~~ (This step must be configured through the Console)
+- Enable multi-region logging enabled CloudTrail
+- Create the resources for terraform remote state(s3 and DynamoDb for locking).
 
 ##### How to run this project #####
 - Configure your AWS credentials with a key set that has the rights to manage IAM resources. Since I am using this project to configure a fresh aws account I used the root accounts keys.
@@ -31,6 +33,9 @@ The purpose of this project is to take a brand new account and run a series of u
 - This project is not using remote state as the expectations are for this project to be an initial setup deferring additional asset builds to another project that can have remote state.
 
 
+##### References:
+- https://aws.amazon.com/answers/security/aws-secure-account-setup/
+- http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
+
 ##### TODO:
-- Add s3 bucket for remote state
-- Add DynamoDb table for remote state locking.
+-
