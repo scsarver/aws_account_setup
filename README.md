@@ -1,5 +1,5 @@
 ### AWS Account Setup using Terraform ###
-The purpose of this project is to take a brand new account and run a series of updates to bring the state of the account into a reasonable state for use and handle the base levels of securing an account like the following:
+The purpose of this project is to take a brand new AWS account and run a series of updates to bring the state of the account into a reasonable state for use and handle the base levels of securing an account like the following:
 - ~~Activate MFA on your root account~~ (This step must be configured through the Console)
 - Creating an account alias
 - Create individual IAM users
