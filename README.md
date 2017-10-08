@@ -38,4 +38,4 @@ The purpose of this project is to take a brand new AWS account and run a series 
 - http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 ##### TODO:
--
+- Add a logging bucket for remote state.
