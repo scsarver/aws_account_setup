@@ -19,8 +19,8 @@ resource "aws_s3_bucket" "s3_for_remote_state" {
 
 resource "aws_dynamodb_table" "dynamodb_for_state_lock" {
   name           = "${var.remote_state_prefix}-remote-state-locking"
-  read_capacity  = 20
-  write_capacity = 20
+  read_capacity  = 10
+  write_capacity = 10
   hash_key       = "${var.remote_state_prefix}-lock-id"
 
   attribute {
